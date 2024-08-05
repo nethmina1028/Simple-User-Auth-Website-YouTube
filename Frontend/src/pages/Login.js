@@ -34,7 +34,7 @@ function Login() {
             fetchUsers();
             navigate('/account')
             window.location.reload();
-            localStorage.setItem('token', token)
+            localStorage.setItem('token', token)            //importent  
         } catch (error) {
             console.log('Login Error', error)
         }
@@ -42,7 +42,7 @@ function Login() {
 
 
   return (
-    <div className='w-full h-screen flex'>
+    <div className='flex w-full h-screen'>
          <div className='w-[50%] h-[100%] bg-[#1a1a1a] text-white flex justify-center items-center'>
             <form className='text-center border rounded-lg w-[600px] h-[400px] p-9'
             onSubmit={handleLogin}
