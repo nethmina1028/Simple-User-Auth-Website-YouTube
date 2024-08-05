@@ -7,7 +7,7 @@ import SignUp from './pages/SignUp'
 import Account from './pages/Account'
 
 function App() {
-  const isUserSignedIn = !!localStorage.getItem('token')
+  const isUserSignedIn = !!localStorage.getItem('token')    //token access
 
   return (
     <div className="App">
